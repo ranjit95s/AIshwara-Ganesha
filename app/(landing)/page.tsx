@@ -5,10 +5,10 @@ import React from "react";
 const landingPage = () => {
   return (
     <>
-      <Link href="/sign-in">
+      <Link href="/sign-in" prefetch>
         <Button>Login</Button>
       </Link>
-      <Link href="/sign-up">
+      <Link href="/sign-up" prefetch>
         <Button>Registrer</Button>
       </Link>
     </>

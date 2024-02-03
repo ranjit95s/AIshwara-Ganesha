@@ -67,7 +67,7 @@ const Sidebar = () => {
   return (
     <div className="space-y-4 py-4 flex flex-col h-full bg-[#111827] text-white">
       <div className="px-3 flex-1 py-3">
-        <Link href={"/"} className="flex items-center pl-3 mb-14">
+        <Link href={"/"} prefetch className="flex items-center pl-3 mb-14">
           <div className="relative w-8 h-8 mr-4">
             <Image fill alt={"logo"} src={"/logo.png"} />
           </div>
@@ -77,7 +77,7 @@ const Sidebar = () => {
         </Link>
         <div className="space-y-1">
           {routes.map((route) => (
-            <Link
+            <Link prefetch
               key={route.href}
               href={route.href}
               className={cn(
